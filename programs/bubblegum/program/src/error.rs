@@ -56,4 +56,12 @@ pub enum BubblegumError {
     LeafAuthorityMustSign,
     #[msg("Collection Not Compatable with Compression, Must be Sized")]
     CollectionMustBeSized,
+    #[msg("Metadata Not Mutable")]
+    MetadataImmutable,
+    #[msg("Collection mismatch")]
+    CollectionMismatch,
+    #[msg("MetadataArgs Ambiguous")]
+    MetadataArgsAmbiguous,
+    #[msg("MetadataArgs Missing")]
+    MetadataArgsMissing,
 }
