@@ -391,6 +391,74 @@ export class CollectionMustBeSizedError extends ProgramError {
 codeToErrorMap.set(0x178a, CollectionMustBeSizedError);
 nameToErrorMap.set('CollectionMustBeSized', CollectionMustBeSizedError);
 
+/** MetadataImmutable: Metadata Not Mutable */
+export class MetadataImmutableError extends ProgramError {
+  readonly name: string = 'MetadataImmutable';
+
+  readonly code: number = 0x178b; // 6027
+
+  constructor(program: Program, cause?: Error) {
+    super('Metadata Not Mutable', program, cause);
+  }
+}
+codeToErrorMap.set(0x178b, MetadataImmutableError);
+nameToErrorMap.set('MetadataImmutable', MetadataImmutableError);
+
+/** CollectionMismatch: Collection mismatch */
+export class CollectionMismatchError extends ProgramError {
+  readonly name: string = 'CollectionMismatch';
+
+  readonly code: number = 0x178c; // 6028
+
+  constructor(program: Program, cause?: Error) {
+    super('Collection mismatch', program, cause);
+  }
+}
+codeToErrorMap.set(0x178c, CollectionMismatchError);
+nameToErrorMap.set('CollectionMismatch', CollectionMismatchError);
+
+/** MetadataArgsAmbiguous: MetadataArgs Ambiguous */
+export class MetadataArgsAmbiguousError extends ProgramError {
+  readonly name: string = 'MetadataArgsAmbiguous';
+
+  readonly code: number = 0x178d; // 6029
+
+  constructor(program: Program, cause?: Error) {
+    super('MetadataArgs Ambiguous', program, cause);
+  }
+}
+codeToErrorMap.set(0x178d, MetadataArgsAmbiguousError);
+nameToErrorMap.set('MetadataArgsAmbiguous', MetadataArgsAmbiguousError);
+
+/** MetadataArgsMissing: MetadataArgs Missing */
+export class MetadataArgsMissingError extends ProgramError {
+  readonly name: string = 'MetadataArgsMissing';
+
+  readonly code: number = 0x178e; // 6030
+
+  constructor(program: Program, cause?: Error) {
+    super('MetadataArgs Missing', program, cause);
+  }
+}
+codeToErrorMap.set(0x178e, MetadataArgsMissingError);
+nameToErrorMap.set('MetadataArgsMissing', MetadataArgsMissingError);
+
+/** MissingCollectionAuthoritySignature: Missing Collection Authority Signature */
+export class MissingCollectionAuthoritySignatureError extends ProgramError {
+  readonly name: string = 'MissingCollectionAuthoritySignature';
+
+  readonly code: number = 0x178f; // 6031
+
+  constructor(program: Program, cause?: Error) {
+    super('Missing Collection Authority Signature', program, cause);
+  }
+}
+codeToErrorMap.set(0x178f, MissingCollectionAuthoritySignatureError);
+nameToErrorMap.set(
+  'MissingCollectionAuthoritySignature',
+  MissingCollectionAuthoritySignatureError
+);
+
 /**
  * Attempts to resolve a custom program error from the provided error code.
  * @category Errors

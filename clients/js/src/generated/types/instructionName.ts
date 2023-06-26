@@ -25,6 +25,7 @@ export enum InstructionName {
   UnverifyCollection,
   SetAndVerifyCollection,
   MintToCollectionV1,
+  UpdateMetadata,
 }
 
 export type InstructionNameArgs = InstructionName;
