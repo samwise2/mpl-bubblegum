@@ -5,7 +5,7 @@
  * See: https://github.com/metaplex-foundation/solita
  */
 
-import * as beet from '@metaplex-foundation/beet';
+import * as beet from '@metaplex-foundation/beet'
 /**
  * @category enums
  * @category generated
@@ -27,13 +27,13 @@ export enum InstructionName {
   UnverifyCollection,
   SetAndVerifyCollection,
   MintToCollectionV1,
+  UpdateMetadata,
 }
 
 /**
  * @category userTypes
  * @category generated
  */
-export const instructionNameBeet = beet.fixedScalarEnum(InstructionName) as beet.FixedSizeBeet<
-  InstructionName,
+export const instructionNameBeet = beet.fixedScalarEnum(
   InstructionName
->;
+) as beet.FixedSizeBeet<InstructionName, InstructionName>

@@ -64,6 +64,6 @@ pub enum BubblegumError {
     MetadataArgsAmbiguous,
     #[msg("MetadataArgs Missing")]
     MetadataArgsMissing,
-    #[msg("Missing Collection Authority Signature")]
-    MissingCollectionAuthoritySignature,
+    #[msg("NFT linked to collection")]
+    NFTLinkedToCollection,
 }
